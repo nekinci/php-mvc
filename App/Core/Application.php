@@ -39,7 +39,7 @@
          * */
 
         protected function ParseURL(){
-            $request = trim($_SERVER["REQUEST_URI"],"/");
+            $request = trim($_SERVER['REQUEST_URI'], "/");
             if(!empty($request)){
                 $url = explode("/",$request);
                 $this->controller = isset($url[0]) ? $url[0]."Controller" : "HomeController";
